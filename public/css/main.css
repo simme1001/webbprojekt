@@ -9,3 +9,35 @@
 .navtext-margin{
   margin-left: .5vw;
 }
+
+.text-black{
+  color: black;
+}
+
+.btn-textsize{
+  font-size: 35px;
+}
+
+span.nobreak{
+  white-space: nowrap;
+}
+
+.nobreak{
+  white-space: nowrap;
+}
+
+.clockSecond{
+  font-size: 18px;
+}
+
+.divider{
+  font-size: 30px;
+}
+
+#timetemp{
+  padding-bottom: 10vh;
+}
+
+button{
+  margin: 40px;
+}
