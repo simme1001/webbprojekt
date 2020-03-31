@@ -16,19 +16,19 @@ console.log("The server is running on port: " + port + "...")
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res){
-  //getLocation();
-  //getTemperature();
   res.render('index');
 });
 
 app.get('/spel', function(req, res){
-  //getLocation();
   res.render('spel');
 });
 
+app.get('/social', function(req, res){
+  res.render('social');
+});
+
 app.get('/arbete', function(req, res){
-  //getLocation();
-  res.render(path.join(__dirname, '/arbete.ejs'));
+  res.render('arbete');
 });
 
 app.listen(port);
