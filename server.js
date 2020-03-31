@@ -5,6 +5,8 @@ const morgan = require('morgan');
 const port = 3000;
 const app = express();
 
+app.set('view engine', 'ejs');
+
 // api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={your api key}
 
 //Länkar till modulen
@@ -16,12 +18,12 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res){
   //getLocation();
   //getTemperature();
-  res.render(path.join(__dirname, '/index.ejs'));
+  res.render('index');
 });
 
 app.get('/spel', function(req, res){
   //getLocation();
-  res.render(path.join(__dirname, '/spel.ejs'));
+  res.render('spel');
 });
 
 app.get('/arbete', function(req, res){
